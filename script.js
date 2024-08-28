@@ -14,7 +14,7 @@ function getTodoHtml(todo, index) {
     return '';
   }
   let checked = todo.status == "completed" ? "checked" : "";
-  return /* html */ `
+  return `
     <li class="todo">
       <label for="${index}">
         <input id="${index}" onclick="updateStatus(this)" type="checkbox" ${checked}>
